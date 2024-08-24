@@ -11,4 +11,6 @@ router.get("/", tourController.index);
 
 router.get("/create", tourController.create);
 
+router.post("/create", upload.fields([{ name: 'images', maxCount: 10 }]), uploadCloud.uploadFields, tourController.createPost);
+
 export const tourRoutes: Router = router;

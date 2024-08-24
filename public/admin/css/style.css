@@ -131,3 +131,7 @@
 .delete-button:hover {
   background-color: darkred;
 }
+
+.form-group {
+  margin-bottom: 15px;
+}
